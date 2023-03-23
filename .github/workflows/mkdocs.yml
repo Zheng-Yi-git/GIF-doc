@@ -48,4 +48,4 @@ jobs:
           preview: false
     environment:
       name: production_environment
-      url: ${{ steps.step_id.outputs.url_output }}
+      url: https://zheng-yi-git.github.io/gif-doc/
