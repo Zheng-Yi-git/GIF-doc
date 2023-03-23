@@ -24,16 +24,6 @@ jobs:
           path: .
           name: github-pages
           retention-days: 1
-      - run: chmod -c -R +rX "$INPUT_PATH" | while read line; do 
-              echo "::warning title=Invalid file permissions automatically fixed::$line"
-              done
-              tar \
-                --dereference --hard-dereference \
-                --directory "$INPUT_PATH" \
-                -cvf "$RUNNER_TEMP/artifact.tar" \
-                --exclude=.git \
-                --exclude=.github \
-                .
       - uses: actions/upload-artifact@main
         with:
           name: github-pages
@@ -49,6 +39,7 @@ jobs:
               -F conclusion="$CONCLUSION"
   deploy:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - uses: actions/deploy-pages@v1
         with:
