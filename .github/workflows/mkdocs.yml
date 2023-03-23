@@ -12,7 +12,7 @@ jobs:
           ref: gh-pages
           submodules: recursive
           repository: Zheng-Yi-git/GIF-doc
-          token: ***
+          # token: ***
           ssh-strict: true
           persist-credentials: true
           clean: true
@@ -53,7 +53,7 @@ jobs:
       - uses: actions/deploy-pages@v1
         with:
           emit_telemetry: false
-          token: ***
+          # token: ***
           timeout: 600000
           error_count: 10
           reporting_interval: 5000
