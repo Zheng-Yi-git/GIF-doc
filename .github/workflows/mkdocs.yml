@@ -46,3 +46,6 @@ jobs:
           reporting_interval: 5000
           artifact_name: github-pages
           preview: false
+    environment:
+      name: production_environment
+      url: ${{ steps.step_id.outputs.url_output }}
