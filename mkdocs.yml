@@ -1,6 +1,6 @@
-site_name: Software Engineering Course Index
-repo_url: https://github.com/Ashitemaru/SE-course-index
-repo_name: SE Course Index
+site_name: Software Engineering Project A - GIF
+repo_url: https://github.com/Zheng-Yi-git/GIF-doc
+repo_name: SE Project A - GIF
 
 theme:
   name: material
