@@ -1,6 +1,6 @@
-site_name: Software Engineering Project A - GIF
+site_name: GIF Website
 repo_url: https://github.com/Zheng-Yi-git/GIF-doc
-repo_name: SE Project A - GIF
+repo_name: THUSE_PRJ_GIF
 
 theme:
   name: material
