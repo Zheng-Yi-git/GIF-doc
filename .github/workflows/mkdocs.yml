@@ -30,20 +30,15 @@ jobs:
           path: /home/runner/work/_temp/artifact.tar
           retention-days: 1
           if-no-files-found: warn
-  report-build-status:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" \
-              -F github_run_id="$GITHUB_RUN_ID" \
-              -F conclusion="$CONCLUSION"
   deploy:
+    permissions:
+      id-token: write
     runs-on: ubuntu-latest
     needs: build
     steps:
       - uses: actions/deploy-pages@v1
         with:
-          emit_telemetry: false
+          # emit_telemetry: false
           # token: ***
           timeout: 600000
           error_count: 10
