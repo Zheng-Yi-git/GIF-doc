@@ -1,4 +1,4 @@
-# Welcome to Software Engineering!
+# Welcome to Software Engineering Project A - GIF
 
 本文档为清华大学计算机科学与技术系 2023 春季学期《软件工程》课程课程主页，集合了下述资源供同学们参考、查阅：
 
