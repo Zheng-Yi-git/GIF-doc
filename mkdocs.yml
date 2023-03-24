@@ -72,7 +72,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
 
 nav:
-  - 主页: index.md
+  - 主页test: index.md
   - 前后端分离开发基础:
     - basic/index.md
     - Web 应用的历史: basic/history.md
